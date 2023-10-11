@@ -29,7 +29,7 @@ exports.createNewUser=async(req,res)=>{
         try{
         const salt = await bcrypt.genSalt();
         const passwordHash = await bcrypt.hash(password, salt);
-        const role="owner"
+        const role="admin"
         const newUser = new User({
         email,
         password: passwordHash,

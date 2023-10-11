@@ -13,7 +13,7 @@ const UserSchema=new mongoose.Schema({
     role:{
         type:String,
     }
-    
+
 },{timestamps:true})
 
 module.exports=mongoose.model("User",UserSchema); 
